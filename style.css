@@ -9,6 +9,7 @@ a{
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 #header{
     width: 100%;
@@ -339,15 +340,13 @@ form .btn2{
 nav .fas{
     display: none;
 }
-
 @media only screen and (max-width: 600px){
-    body{
+    html,body{
         overflow-x: hidden;
     }
-    
     #header{
         background-image: url(images/dpdarkshadow.png);
-        background-size: 100%;
+        background-size: 60vh;
         background-repeat: no-repeat;
         /* background-size: cover; */
         background-position: center 15%;

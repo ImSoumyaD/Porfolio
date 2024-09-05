@@ -2,7 +2,7 @@
 
 Welcome to my portfolio repository! This repository showcases my personal portfolio website, where you can find detailed information about my projects, skills, and professional experiences. Feel free to explore, and don't hesitate to reach out if you'd like to collaborate on any exciting projects.
 
-🌐 **Live Portfolio:** [Visit My Portfolio](https://imsoumyad.github.io/Portfolio/)
+🌐 **Live Portfolio:** [Visit My Portfolio](https://imsoumyad.github.io/Porfolio/)
 
 ## 🛠️ Skills & Expertise
 

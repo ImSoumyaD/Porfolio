@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumyadeep Paul</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/11ddc2eca9.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    @keyframes appear{
+        from{
+            opacity: 0;
+            scale: 0.5;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+    .block{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 40%;
+    }
+</style>
+<body>
+    <div class="view">
+    <div id="header" class="block">
+        <div class="container">
+            <nav>
+                <a href="index.html"><img class = "logo" src="images/newlogo2.png"></a>
+                <ul id ="sidemenu">
+                    <li><a href="#header" onclick="closemenu()">Home</a</li>
+                    <li><a href="#about" onclick="closemenu()">About</a</li>
+                    <li><a href="#portfolio" onclick="closemenu()">Projects</a</li>
+                    <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-duotone fa-solid fa-bars fas" style="--fa-primary-color: #000000; --fa-secondary-color: #000000;" onclick="openmenu()"></i>
+            </nav>
+            <div class="header_text">
+                <h1>Hi, I'm <span>Soumyadeep</span> Paul</h1>
+                <p>Full Stack Java Developer</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/imsoumya/" target="_blank" class="icons"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                    <a href="https://github.com/ImSoumyaD" target="_blank" class="icons"><i class="fa-brands fa-github"></i> Github</a>
+                    <a href="https://leetcode.com/u/Im_Soumya/" target="_blank" class="icons"><i class="fa-solid fa-code"></i></i> Leetcode</a>
+                </div>
+                <a href="Files/Soumya_Resume.pdf" download  class="btn btn2" >Download Resume</a>
+            </div>
+        </div>
+    </div>
+    <!-- ----------About Section ----------------- -->
+    <div id="about" class="block">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1720285323893.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p class="about">Aspiring Java Developer with strong knowledge of Java, DSA, and web technologies. Currently deepening skills in Spring Framework and eager to apply technical abilities in a dynamic software development role.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                        <p class="tab-links"onclick="opentab('Extra')">Extra Curricular</p>
+                    </div>
+                    <!-- ----skills---- -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br> Java, JDBC, Servlets, JSP, JavaScript, HTML/CSS</li>
+                            <li><span>Tools</span><br> Docker, Kubernetes, Git, VS Code, IntelliJ IDEA</li>
+                            <li><span>Frameworks</span> <br>SpringBoot, Microservices, Kafka</li>
+                        </ul>
+                    </div>
+                    <!-- ---------Education---------- -->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Post Graduation <span style="font-size: 14px; color: #9d9d9d;">(2024-2025)</span></span>
+                                <li style="margin-top: -7px; font-weight: 550;">Maulana Abul Kalam Azad University of Technology</li>
+                                <li style="margin-top: -7px; ">MCA</li>
+                            </li>
+                            <li><span>Graduation </span><span style="font-size: 14px; color: #9d9d9d;">(2020-2023)</span>
+                                <li style="margin-top: -7px; font-weight: 550;">Raiganj University</li>
+                                <li style="margin-top: -7px;">BCA</li>
+                                <li style="margin-top: -8px;">CGPA : <span style="color: white; font-weight: 500;">8.70</span></li>
+                            </li>
+                            <li><span>Higher Secondary </span><span style="font-size: 14px; color: #9d9d9d;">(2020)</span> 
+                                <li style="margin-top: -7px; font-weight: 550;">Debinagar Kailash Chandra Radharani Vidyapith</li>
+                                <li style="margin-top: -7px;">Sceince</li>
+                                <li style="margin-top: -8px;">Percentage : <span style="color: white; font-weight: 500;">77.2%</span></li>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- -------Extra------- -->
+                    <div class="tab-contents" id="Extra">
+                        <ul>
+                            <li><span>LeetCode <a href="https://leetcode.com/u/Im_Soumya/" target="_blank" style="text-decoration: underline; color: #43b8ef;
+                            font-size: 14px;">Link</a></span><br>Solves 200+ Questions <br> Contest Rating : 1473</li>
+                            <li><span>GeekForGeeks</span><br>Contest Rating : 1605</li>
+                            <li><span>Certification </span><a href="https://drive.google.com/file/d/1NqWGgRppvIdQPVSjWDoiOCqTbts-aNZW/view" target="_blank" style="text-decoration: underline; color: #43b8ef;
+                            font-size: 14px;">Link</a><br> DSA through Java </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------projects---------------- -->
+     <div id="portfolio" class="block">
+        <div class="container">
+            <h1 class="subtitle" style="color: black;">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/aasm2.png">
+                    <div class="layer">
+                        <h3>AASM Garden</h3>
+                        <p>Developed the user interface for the Raiganj University Botanical Garden website</p>
+                        <a href="https://aasm.infoproviderhub.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/room3.jpg">
+                    <div class="layer">
+                        <h3>Room Rent</h3>
+                        <p>Room Rent Project is a simple web app that lets users register, log in using HTML, CSS, and PHP.</p>
+                        <a href="https://pxfcxcuckajnzwamfby04w.on.drv.tw/www.YouRoom.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/aasm.png">
+                    <div class="layer">
+                        <h3>AASM Garden</h3>
+                        <p>Developed the user interface for the Raiganj University Botanical Garden website</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+     </div>
+     <!-- -------contact---------- -->
+    <div id="contact" class="block">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle" style="color: black; margin-left: 0;">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> soumyadeep0823@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 7063306918</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/imsoumya/" target="_blank" class="social-link">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span class="tooltip">Connect on LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/ImSoumyaD" target="_blank" class="social-link">
+                            <i class="fa-brands fa-github"></i>
+                            <span class="tooltip">Check my GitHub</span>
+                        </a>
+                        <a href="https://leetcode.com/u/Im_Soumya/" target="_blank" class="social-link">
+                            <i class="fa-solid fa-code"></i></i>
+                            <span class="tooltip">View my LeetCode</span>
+                        </a>
+                    </div>
+                    <a href="Files/Soumya_Resume.pdf" download  class="btn btn2" style="font-size: 20px;">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        // // -----align section to the center when scrolling ------------
+        // document.querySelectorAll('nav a').forEach(anchor => {
+        // anchor.addEventListener('click', function(e) {
+        //     e.preventDefault();
+
+        //     const targetId = this.getAttribute('href').substring(1);
+        //     const targetElement = document.getElementById(targetId);
+
+        //     window.scrollTo({
+        //         top: targetElement.offsetTop - (window.innerHeight / 2) + (targetElement.clientHeight / 2),
+        //         behavior: 'smooth'
+        //     });
+        // });
+    // });
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx-IB43fukR3t1zQeNdqt-_PZwxtVMbEVQ3E67A-QRQirSQvf1swvFNDE5N77gzI1QaLg/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- -------for smaller screen side menu ----------------- -->
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-220px";
+        }
+
+    </script>
+</body>
+</html>
